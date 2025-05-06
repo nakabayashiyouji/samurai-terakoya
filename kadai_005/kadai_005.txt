@@ -1,0 +1,56 @@
+PS C:\Users\HP\Desktop\任意\git_challenge> mkdir git_challenge
+
+    ディレクトリ: C:\Users\HP\Desktop\任意\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/05/07      4:04                git_challenge
+
+
+PS C:\Users\HP\Desktop\任意\git_challenge> cd git challenge
+Set-Location : 引数 'challenge' を受け入れる位置指定パラメータ
+ーが見つかりません。
+発生場所 行:1 文字:1
++ cd git challenge
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Locati 
+   on]、ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Micr  
+   osoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\HP\Desktop\任意\git_challenge> git init
+Initialized empty Git repository in C:/Users/HP/Desktop/任意/git_challenge/.git/
+PS C:\Users\HP\Desktop\任意\git_challenge> git init
+Reinitialized existing Git repository in C:/Users/HP/Desktop/任 意/git_challenge/.git/
+PS C:\Users\HP\Desktop\任意\git_challenge> git add .
+PS C:\Users\HP\Desktop\任意\git_challenge> git add hello_worlr.txt
+fatal: pathspec 'hello_worlr.txt' did not match any files       
+PS C:\Users\HP\Desktop\任意\git_challenge> git commit -m        
+error: switch `m' requires a value
+PS C:\Users\HP\Desktop\任意\git_challenge> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+PS C:\Users\HP\Desktop\任意\git_challenge> git diff --staged
+diff --git a/hello_world.txt b/hello_world.txt
+new file mode 100644
+index 0000000..52d8a39
+--- /dev/null
++++ b/hello_world.txt
+@@ -0,0 +1,2 @@
++Hello world!
++こんにちは、世界！
+PS C:\Users\HP\Desktop\任意\git_challenge> 
+PS C:\Users\HP\Desktop\任意\git_challenge> git log
+fatal: your current branch 'main' does not have any commits yet
+PS C:\Users\HP\Desktop\任意\git_challenge> git log -p [C:\Users\HP\Desktop\任意\git_challenge]
+fatal: your current branch 'main' does not have any commits yet
+PS C:\Users\HP\Desktop\任意\git_challenge> git log --oneline
+fatal: your current branch 'main' does not have any commits yet
+PS C:\Users\HP\Desktop\任意\git_challenge> 
